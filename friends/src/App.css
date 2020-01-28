@@ -51,3 +51,14 @@ header{
 .links a{
   margin: 0 1vw;
 }
+
+.addFriendForm{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addFriendForm input{
+  margin: 1vh;
+}
