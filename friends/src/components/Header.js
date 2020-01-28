@@ -8,7 +8,12 @@ export const Header = () => {
         FRIENDS
       </div>
       <div className="links">
-        <Link to="/login">Login</Link>
+        {!localStorage.getItem('token')
+          ? <Link to="/login">Login</Link>
+          : <Link to="/login" onClick={() => {
+            localStorage.clear()
+          }}>Logout</Link>}
+
         <Link to="/protected">View Friends</Link>
       </div>
     </header>
