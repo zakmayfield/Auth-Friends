@@ -6,6 +6,7 @@ import './App.css';
 import Login from './components/Login';
 import SuperSecretFriends from './components/SuperSecretFriends';
 import PrivateRoute from './components/PrivateRoute';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/login" component={Login} />
         <Route component={Login} />
       </Switch>
+
+      <Footer />
     </div>
   );
 }

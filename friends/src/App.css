@@ -57,8 +57,87 @@ header{
   flex-flow: column;
   justify-content: center;
   align-items: center;
+
+  border: 5px solid grey;
+  border-radius: 10px;
+  padding: 5vh 2vw;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.addFriendForm input{
+input{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1vh 1vw;
   margin: 1vh;
+}
+
+.loginForm{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+	box-shadow: 0px 2px 5px 0px #030303;
+	background-color:#a2a7fd;
+  border-radius: 10px;
+  border: none;
+	cursor:pointer;
+  color: black;
+  font-weight: bold;
+	padding:8px 31px;
+  outline: none;
+  transition: .2s;
+}
+button:hover {
+  background-color:#1720d3;
+  color: white;
+  transition: .2s;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+.logo{
+  width: 300px;
+}
+
+.App{
+  background-image: url('https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a{
+  color: black;
+  font-weight: bold;
+}
+
+.friendContainer{
+  background: rgba(255, 255, 255, 0.75);
+  width: 25%;
+  padding: 5vh;
+  margin: 0 auto;
+  margin-top: 2vh;
+  border-radius: 10px;
+}
+
+.friendContainer p {
+  font-size: 1.25rem;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  height: 30vh;
+  margin-top: 5vh;
+  background: rgba(255, 255, 255, 0.466);
 }

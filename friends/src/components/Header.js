@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import friendslogo from '../images/friendslogo.png'
 
 export const Header = () => {
   return (
     <header>
       <div>
-        FRIENDS
+        <Link to="/login"><img src={friendslogo} className="logo" /></Link>
+        
       </div>
       <div className="links">
         {!localStorage.getItem('token')

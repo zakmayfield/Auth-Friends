@@ -90,11 +90,13 @@ class SuperSecretFriends extends React.Component{
 
           <button>Add Friend</button>
         </form>
-        {
-          this.state.friends.map(person => {
-            return <p key={person.id}>{person.name}</p>
-          })
-        }
+        <div className="friendContainer">
+          {
+            this.state.friends.map(person => {
+              return <p key={person.id}>{person.name}</p>
+            })
+          }
+        </div>
       </div>
     )
   }
